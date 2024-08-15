@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<form action="/decrypt" method="post">
+    <div>
+        <p><label for="encrypt">Your encrypted text here:</label></p>
+        <textarea autocomplete="off" placeholder="Type something..." name="ciphertext" rows="10" cols="100"></textarea>
+    </div>
+
+    <div>
+        <p><label for="key">Enter the key used:</label></p>
+        <input autocomplete="off" name="key">
+    </div>
+        <button type="submit">Decrypt</button>
+</form>
+<p text-align="center">Decrypted text:</p>
+<p text-align="center">{{ decrypted_text }}</p>
+{% endblock %}
+
+

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<form action="/manager" method="post">
+    <div class="mb-3">
+        <p><label for="Name">Name:</label></p>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="name" placeholder="e.g May's birthday gift" type="text">
+        <p><label for="key">Key:</label></p>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="key" placeholder="key" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Enter</button>
+</form>
+{% endblock %}

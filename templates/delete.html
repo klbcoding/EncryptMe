@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<form action="/delete" method="post">
+    <div class="mb-3">
+        <p><label for="delete_id">ID number of key to delete:</label></p>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="delete_id" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Enter</button>
+</form>
+{% endblock %}
