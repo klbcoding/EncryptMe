@@ -50,7 +50,7 @@ into layout.html, I can display any template by calling the same command in a HT
 
 
 ### index.html
-This is the main page of EncryptMe. It provides a summary of the names of the keys and the keys themselves, akin to a wallet. Simply copy the key and go to the "Decrypt" in the navigation bar and paste it into the "key" input box.
+This is the main page of EncryptMe. It provides a summary of the names of the keys and the keys themselves, akin to a wallet. Simply copy the key and go to "Decrypt" in the navigation bar and paste it into the "key" input box.
 
 ### manager.html
 This file is one of the HTML templates that allow you to save your keys into a database while giving a name for the key
@@ -132,7 +132,7 @@ def fernet_decryption(string_bytes, key):
 This file allows you to delete keys that are no longer in use. By getting the id of the key to be deleted, an SQL query can be executed to delete the corresponding key.
 
 ```
-db.execute("DELETE FROM references WHERE id = ?" delete_id)
+db.execute("DELETE FROM references WHERE id = ?", delete_id)
 ```
 ### Additional materials
 Here are some additional resources that can introduce you to cryptography.
