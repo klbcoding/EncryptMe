@@ -141,7 +141,8 @@ AES: How to design secure encryption by Spanning Tree: https://www.youtube.com/w
 
 Introduction to cryptography by SciShow: https://www.youtube.com/watch?v=-yFZGF8FHSg&t=83s
 
-
+Copyright © 2024 Beh Kai Le Rinchen  
+All rights reserved. No part of this software may be copied, redistributed or modified without written permission from the copyright owner.
 
 
 
